@@ -1,0 +1,4 @@
+- tig
+- git
+- lazygit
+- tmux
