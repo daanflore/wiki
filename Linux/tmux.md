@@ -1,11 +1,21 @@
-To enter command mode always use `contrl` + `a` 
+To enter shortcut mode always use `contrl` + `a` 
 
 Once in command mode you can use the following commands:
-### In command mode
+### In shortcut mode
 
-| Shortcut | Action                 |
-| -------- | ---------------------- |
-| `b`      | create new bash window |
+| Shortcut       | Action                             |
+| -------------- | ---------------------------------- |
+| `c`            | create new bash window             |
+| `z`            | zoom                               |
+| `:`            | enter command mode                 |
+| `altgr` + `\|` | Split vertical in current window   |
+| `shift` + `_`  | Split horizontal in current window |
+| `&`            | Split vertical in current pane     |
+| `-`            | Split horizontal in current pane   |
+| `k`            | Kill pane                          |
+### command mode
+
+break-pane => split selected pane to new window
 
 ### No command mode needed
 
