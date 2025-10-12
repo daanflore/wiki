@@ -1,6 +1,6 @@
 
-| Shortcut    | Action                                                |
-| ----------- | --------------------------------------------------- |
-| `esc` + `.` | Get the last run com                                  |
-| `!!`    return previous content can be used like `sudo !!`  ``  ``  |
+| Shortcut    | Action                                             |
+| ----------- | -------------------------------------------------- |
+| `esc` + `.` | Get the last argument                              |
+| `!!`        | return previous command can be used like `sudo !!` |
 

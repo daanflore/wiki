@@ -25,5 +25,12 @@ break-pane => split selected pane to new window
 | `alt` + `arrow left`  | navigate to left open tab  |
 | `alt` + `arrow right` | navigate to right open tab |
 
+### Tmux:
+list active tmux sessions:
 
+`tmux ls`
+
+
+Connect to an existing tmux session 
+`tmux a -t {session id}`
 
