@@ -13,24 +13,32 @@ command
 sudo ssm list
 ```
 
-# extend disk
+# extend volume
 ```bash
 sudo ssm resize -s +5G /dev/alma/var
 ```
 
+# extend device
+```bash
+sudo growpart /dev/sd[a-b] {number of disk}
+
+# Example
+# Will increase the size of the first partition on the disk
+sudo growpart /dev/sdb 1
+```
 
 # Adding new disk
 
 ```bash
 [fdisk (for MBR)|gdisk (for GPT)] /dev/sdx    
-n
+n (new)
 1 (if new disk)    
 p  
 1   
 t 
 8e ( Om naar LVM te gaan ) 8e00 (if using gdisk)   
-p   
-w 
+p   (print for validaiton)
+w   (write to system)
 df -h 
 sudo ssm add -p alma /dev/sdXX 
 ssm create -s 1T -n /dev/centos/oracle07 --fstype xfs -p centos 
