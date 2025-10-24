@@ -1,4 +1,4 @@
-To enter shortcut mode always use `contrl` + `a` 
+To enter shortcut mode always use `contrl` + `a` or `b`
 
 Once in command mode you can use the following commands:
 ### In shortcut mode
@@ -13,6 +13,8 @@ Once in command mode you can use the following commands:
 | `&`            | Split vertical in current pane     |
 | `-`            | Split horizontal in current pane   |
 | `k`            | Kill pane                          |
+| p              | previous tab                       |
+| n              | next tab                           |
 ### command mode
 
 break-pane => split selected pane to new window
@@ -24,6 +26,7 @@ break-pane => split selected pane to new window
 | --------------------- | -------------------------- |
 | `alt` + `arrow left`  | navigate to left open tab  |
 | `alt` + `arrow right` | navigate to right open tab |
+|                       |                            |
 
 ### Tmux:
 list active tmux sessions:

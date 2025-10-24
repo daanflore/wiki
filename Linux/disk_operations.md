@@ -31,8 +31,8 @@ sudo growpart /dev/sdb 1
 
 ```bash
 [fdisk (for MBR)|gdisk (for GPT)] /dev/sdx    
-n (new)
-1 (if new disk)    
+Command: n (new)
+Partition1 (if new disk)    
 p  
 1   
 t 
