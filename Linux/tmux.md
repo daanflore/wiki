@@ -37,3 +37,5 @@ list active tmux sessions:
 Connect to an existing tmux session 
 `tmux a -t {session id}`
 
+Connect to an existing tmux session of a different user:
+`tmux -S /tmp/tmux-7777/tmux-{}`
