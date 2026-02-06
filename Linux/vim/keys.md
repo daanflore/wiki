@@ -22,3 +22,6 @@ visual mode (`v`):
 | `y`      | copy (yank) |
 
 insert mode (`i`): 
+
+Replace:
+:%s/: /=/

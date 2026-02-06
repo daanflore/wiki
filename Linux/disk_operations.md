@@ -1,3 +1,5 @@
+how does lvm work:
+![[lvm.png]]
 
 # scan devices
 In case an added disk is not visible you can scan it with the following command:
@@ -21,10 +23,12 @@ sudo ssm resize -s +5G /dev/alma/var
 # extend device
 ```bash
 sudo growpart /dev/sd[a-b] {number of disk}
+sudo pvresize /dev/sd[a-b][1-9]
 
 # Example
-# Will increase the size of the first partition on the disk
+# Will increase the size of the first partition on the disk adn then resize the pv
 sudo growpart /dev/sdb 1
+sudo pvresize /dev/sdb1
 ```
 
 # Adding new disk
@@ -46,4 +50,31 @@ mkfs.xfs /dev/centos/oracle07 
 vi /etc/fstab 
 mkdir /oracle07 
 mount /oracle07
+```
+
+
+List volume groups:
+```sh
+sudo vgdisplay
+or
+sudo vgs
+```
+
+List logical volumes:
+```sh
+sudo lvs
+or
+sudo lvdisplay
+```
+
+```sh
+lsblk
+```
+
+
+List physical volumes:
+```sh
+sudo pvs
+or
+sudo pvdisplay
 ```
