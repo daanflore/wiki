@@ -1,4 +1,4 @@
-mark
+bmark
 Run a playbook
 ```bash
 ansible-playbook [path to playbook] { --vault-password-file [vault fullname] } { --limit "[servername/ group name or regex]" }
@@ -6,7 +6,7 @@ ansible-playbook [path to playbook] { --vault-password-file [vault fullname] } {
  
 Run a one of command
 
-an exclude can be done using ! before the filter and : can be used to add miltiple filters
+an exclude can be done using ! before the filter and : can be used to add multiple filters
 ```bash
 ansible '[servername/ group name or regex]' -m shell -a "[command to run on the servers]" [--become]
 

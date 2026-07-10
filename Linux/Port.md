@@ -14,3 +14,8 @@ nc -l -v -k -p 1433
 |`-c`|Shell command. Executes a command as a single argument to the shell.|
 
 Then you can run telnet or curl telnet:// command to test the connection
+
+
+
+curl -ivk IP:port
+curl telent://

@@ -1,4 +1,4 @@
-how does lvm work:
+uslhow does lvm work:
 ![[lvm.png]]
 
 # scan devices
